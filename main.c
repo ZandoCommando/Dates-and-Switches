@@ -67,11 +67,8 @@ int main(void) {
             break;
     }
 
-    // Print the suffix for a given day
-
-
     // Print the year
-
+    printf(", %d\n", year);
 
     return 0;
 }
