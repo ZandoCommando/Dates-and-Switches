@@ -9,7 +9,7 @@ int main(void) {
     // Don't worry about the `scanf()` below, you'll learn more about these later!
     scanf("%d /%d /%d", &month, &day, &year);
 
-
+    // Print the month
     switch (month)
     {
         case 1:
@@ -49,11 +49,23 @@ int main(void) {
             printf("December");
             break;
     }
-    // Print the month
-
 
     // Print the day
-
+    switch (day)
+    {
+        case 1: case 21: case 31:
+            printf(" %dst", day);
+            break;
+        case 2: case 22:
+            printf(" %dnd", day);
+            break;
+        case 3: case 23:
+            printf(" %drd", day);
+            break;
+        default:
+            printf(" %dth", day);
+            break;
+    }
 
     // Print the suffix for a given day
 
